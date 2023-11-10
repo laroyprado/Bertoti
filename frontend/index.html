@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adote Um Animalzinho</title>
+</head>
+
+<body>
+    <header>
+        <h2>
+            Adote Um Animalzinho
+        </h2>
+        <div>
+
+            <h2>
+                Usuário
+            </h2>
+            <p>
+                Sair
+            </p>
+        </div>
+    </header>
+
+
+
+    <main>
+        <button id="openModalButton">
+            Cadastrar Novo Animal
+        </button>
+        <ul class="listadeanimais">
+
+        </ul>
+    </main>
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalButton">&times;</span>
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="especie" placeholder="Espécie">
+            <input type="text" id="descricao" placeholder="Descrição">
+            <input type="number" id="idade" placeholder="Idade">
+            <input type="text" id="cor" placeholder="Cor Do Animal">
+            <input type="text" id="linkFoto" placeholder="Link Da Foto">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <button id="confirmButton">Confirmar</button>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    <div id="modalItem" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalButtonItem">&times;</span>
+
+
+
+            <p>Nome</p>
+            <p class="nomeDoAnimal"></p>
+            <p>Espécie</p>
+            <p class="especieDoAnimal"></p>
+            <p>Descrição</p>
+            <p class="descricaoDoAnimal"></p>
+
+            <p>Idade</p>
+            <p class="idadeDoAnimal"></p>
+
+            <p>Cor</p>
+            <p class="corDoAnimal"></p>
+
+            <p>Link Da Foto</p>
+            <p class="LinkDaFotoDoAnimal"></p>
+
+            <p>Cidade</p>
+            <p class="cidadeDoAnimal"></p>
+
+        </div>
+
+
+
+
+
+
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
