@@ -1,7 +1,7 @@
 package interfaces;
 
-import classes.Venom;
+import classes.SuperHeroi;
 
 public interface Poder {
-    public void lancarPoder(Venom venom);
+    public void lancarPoder(SuperHeroi superHeroi);
 }
