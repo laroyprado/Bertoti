@@ -2,7 +2,7 @@
 
 
 <h2>Sobre mim</h2>
-<p align="center"><img src="https://github.com/laroyprado.png" width="20%" style="border-radius: 50%; width: 150px; height: 150px; display: block; margin: 0 auto;"></p>
+<p align="center"><img src="./assets/ImagemPerfil.png" width="20%" style="border-radius: 50%; width: 150px; height: 150px; display: block; margin: 0 auto;"></p>
 
 Comecei minha carreira trabalhando com gestão de tráfego de dados, onde percebi o quanto a automação pode facilitar a organização e análise de informações. Isso despertou meu interesse pela programação, especialmente Python, que me mostrou as diversas oportunidades que esse campo oferece.
 
