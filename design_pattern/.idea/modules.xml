@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Strategy/AntiPatter/AntiPatter.iml" filepath="$PROJECT_DIR$/Strategy/AntiPatter/AntiPatter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Observer/AntipPattern/AntipPattern.iml" filepath="$PROJECT_DIR$/Observer/AntipPattern/AntipPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Observer/Observer.iml" filepath="$PROJECT_DIR$/Observer/Observer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Strategy/Patter/Patter.iml" filepath="$PROJECT_DIR$/Strategy/Patter/Patter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Observer/Pattern/Pattern.iml" filepath="$PROJECT_DIR$/Observer/Pattern/Pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/Strategy/Strategy.iml" filepath="$PROJECT_DIR$/Strategy/Strategy.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/design_pattern.iml" filepath="$PROJECT_DIR$/.idea/design_pattern.iml" />
     </modules>

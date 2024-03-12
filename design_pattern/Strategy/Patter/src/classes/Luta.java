@@ -1,6 +1,6 @@
 package classes;
 
-public class Lutar {
+public class Luta {
 
     public void lutar(SuperHeroi heroi1, SuperHeroi heroi2){
         while (true){

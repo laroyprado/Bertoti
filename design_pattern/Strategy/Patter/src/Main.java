@@ -1,14 +1,14 @@
-import classes.Lutar;
+import classes.Luta;
 import classes.SuperHeroi;
 
 public class Main {
     public static void main(String[] args) {
-        SuperHeroi aranha = new SuperHeroi("Laroy", "Lançar Teia ", 40.0,10.0);
+        SuperHeroi laroy = new SuperHeroi("Laroy", "Lançar Teia ", 40.0,10.0);
 
-        SuperHeroi venom = new SuperHeroi("Larissa","Lançar Gosma",30.0, 5.0);
-        Lutar iniciarLuta = new Lutar();
+        SuperHeroi larissa = new SuperHeroi("Larissa","Lançar Gosma",300.0, 50.0);
+        Luta iniciarLuta = new Luta();
 
-        iniciarLuta.lutar(aranha,venom);
+        iniciarLuta.lutar(laroy,larissa);
 
     }
 }
