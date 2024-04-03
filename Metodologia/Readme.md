@@ -2,7 +2,7 @@
 
 
 <h2>Sobre mim</h2>
-<p align="center"><img src="./assets/ImagemPerfil.ge" width="20%" style="border-radius: 50%; width: 150px; height: 150px; display: block; margin: 0 auto;"></p>
+<p align="center"><img src="./assets/ImagemPerfil.png" width="20%" style="border-radius: 50%; width: 150px; height: 150px; display: block; margin: 0 auto;"></p>
 
 Comecei minha carreira trabalhando com gestão de tráfego de dados, onde percebi o quanto a automação pode facilitar a organização e análise de informações. Isso despertou meu interesse pela programação, especialmente Python, que me mostrou as diversas oportunidades que esse campo oferece.
 
@@ -72,11 +72,35 @@ O sistema também automatiza o processo de aprovação, encaminhando as horas re
 
 
 #### Contribuições Pessoais
-Durante minha participação no projeto, desempenhei um papel fundamental como Product Owner e Desenvolvedor. Identifiquei as funcionalidades essenciais em colaboração com o cliente, participei de reuniões para entender as necessidades e expectativas, e organizei o backlog do produto, priorizando as tarefas em cada sprint.
+<details>
+  <summary>Configuração Do Swagger </summary>
+  <img src="/assets/codigoSwagger.png" alt="Descrição da imagem">
+  <br>
+  Participei da criação da configuração do Swagger. Através desse processo, pude entender melhor como as APIs RESTful funcionam e como a documentação adequada pode facilitar tanto para os desenvolvedores quanto para os usuários finais. Essa documentação permite que as funcionalidades podem ser testadas de forma interativa.
+</details>
 
-Como Product Owner, assumi a responsabilidade de definir a ordem de prioridade das tarefas, garantindo que as entregas fossem alinhadas com as necessidades do cliente. Coordenei as atividades de desenvolvimento, orientando a equipe em relação às especificações e requisitos do projeto.
+<details>
+  <summary>Configuração Do Token Service</summary>
+  <img src="/assets/TokenService.png" alt="Descrição da imagem">
+  <br>
+ Criei o arquivo TokenService.java que funciona como um serviço central na nossa aplicação API3SEM. Ele é responsável por gerar e validar tokens JWT, ajudando em manter a segurança da autenticação dos usuários. Com este serviço,apenas usuários autenticados possam acessar determinadas funcionalidades da nossa API, protegendo assim os dados sensíveis e a privacidade dos nossos clientes.
+</details>
 
-Além disso, atuei como fullstack developer, contribuindo tanto no desenvolvimento do backend quanto do frontend. Utilizei Spring Boot para configurar e montar o backend. No frontend, utilizei JavaScript, HTML e CSS para construir interfaces responsivas e intuitivas, proporcionando uma experiência de usuário agradável.
+<details>
+  <summary>Configuração do método GET no "/cr"</summary>
+  <img src="/assets/restController.png" alt="Descrição da imagem">
+  <br>
+Desenvolvi o CenterResultController para gerenciar os resultados dos centros em nossa aplicação. Este controlador REST lida com requisições HTTP para salvar e recuperar informações dos centros de resultados. Utilizei anotações como @RestController e @RequestMapping para definir a classe como um controlador e mapear as requisições para o caminho “cr”.
+
+Com o método saveCenterResult, garanto que todas as informações necessárias sejam fornecidas antes de salvar um centro de resultado, evitando duplicatas e erros de dados. O método getAll recupera uma lista de todos os centros de resultados, facilitando a visualização e o gerenciamento dos mesmos. A anotação @CrossOrigin permite que a API seja acessada de diferentes origens, o que é essencial para a integração com outras partes do sistema ou aplicações de terceiros.
+</details>
+
+<details>
+  <summary>Configuração do método GET no "/cr"</summary>
+  <img src="/assets/filtroControllerHora.png" alt="Descrição da imagem">
+  <br>
+O método filtredHours que desenvolvi permite filtrar registros de horas em nossa API. Ele aceita parâmetros para identificar o tipo de filtro e a variável de busca. Dependendo do filtro, seja por gestor, matrícula, código de CR ou cliente, o método busca e retorna os registros relevantes. Se não encontrar registros ou ocorrer um erro, ele lança uma exceção com uma mensagem explicativa. Esse recurso facilita a busca de informações específicas pelos usuários.
+</details>
 
 #### Hard Skills
 
