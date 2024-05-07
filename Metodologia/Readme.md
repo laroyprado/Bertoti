@@ -72,31 +72,39 @@ O sistema também automatiza o processo de aprovação, encaminhando as horas re
 
 
 #### Contribuições Pessoais
+
+
+<details>
+  <summary>Configuração do método GET no "/cr"</summary>
+  <img src="/assets/restController.png" alt="Descrição da imagem">
+  <br>
+DDesenvolvi o CenterResultController para gerenciar os resultados dos centros em nossa aplicação. Este controlador REST opera sobre o protocolo HTTP, que é a base da comunicação na web, permitindo que clientes e servidores se comuniquem. No contexto REST (Representational State Transfer), que é um estilo arquitetural para sistemas distribuídos, o CenterResultController lida com requisições HTTP para salvar e recuperar informações dos centros de resultados.
+
+Ao utilizar anotações como @RestController e @RequestMapping, defini a classe como um controlador e mapeei as requisições para o caminho "cr", tornando mais claro o acesso aos recursos relacionados aos centros de resultados.
+
+O método saveCenterResult foi projetado para garantir que todas as informações necessárias sejam fornecidas antes de salvar um centro de resultado, o que ajuda a prevenir duplicatas e erros de dados. Enquanto isso, o método getAll é responsável por recuperar uma lista de todos os centros de resultados, facilitando a visualização e o gerenciamento desses dados.
+
+A anotação @CrossOrigin é uma medida de segurança que permite que a API seja acessada de diferentes origens, o que é fundamental para a integração com outras partes do sistema ou aplicações de terceiros. Isso ajuda a evitar problemas de segurança, ao mesmo tempo em que possibilita uma maior flexibilidade na interação com a API.
+</details>
+
 <details>
   <summary>Configuração Do Swagger </summary>
   <img src="/assets/codigoSwagger.png" alt="Descrição da imagem">
   <br>
-  Participei da criação da configuração do Swagger. Através desse processo, pude entender melhor como as APIs RESTful funcionam e como a documentação adequada pode facilitar tanto para os desenvolvedores quanto para os usuários finais. Essa documentação permite que as funcionalidades podem ser testadas de forma interativa.
+ Desenvolvi a configuração do Swagger como parte do processo de criação. Essa experiência me proporcionou uma compreensão mais profunda do funcionamento das APIs RESTful e da importância da documentação precisa. O Swagger é uma ferramenta essencial para criar e visualizar a documentação de APIs de forma clara e acessível. Ele permite que desenvolvedores e usuários finais entendam facilmente os endpoints disponíveis, os parâmetros necessários e os formatos de resposta esperados. Além disso, o Swagger oferece uma interface interativa que possibilita testar as funcionalidades da API diretamente na documentação, simplificando o processo de desenvolvimento e garantindo uma melhor experiência para os usuários.
 </details>
 
 <details>
   <summary>Configuração Do Token Service</summary>
   <img src="/assets/TokenService.png" alt="Descrição da imagem">
   <br>
- Criei o arquivo TokenService.java que funciona como um serviço central na nossa aplicação API3SEM. Ele é responsável por gerar e validar tokens JWT, ajudando em manter a segurança da autenticação dos usuários. Com este serviço,apenas usuários autenticados possam acessar determinadas funcionalidades da nossa API, protegendo assim os dados sensíveis e a privacidade dos nossos clientes.
+Desenvolvi o arquivo TokenService.java, uma peça fundamental na estrutura da nossa aplicação API3SEM. Este serviço desempenha um papel central na geração e validação de tokens JWT, fortalecendo a segurança do processo de autenticação dos usuários. Por meio dele, somente usuários autenticados têm permissão para acessar funcionalidades específicas da nossa API, garantindo, assim, a proteção de dados sensíveis e a privacidade dos nossos clientes.
 </details>
 
-<details>
-  <summary>Configuração do método GET no "/cr"</summary>
-  <img src="/assets/restController.png" alt="Descrição da imagem">
-  <br>
-Desenvolvi o CenterResultController para gerenciar os resultados dos centros em nossa aplicação. Este controlador REST lida com requisições HTTP para salvar e recuperar informações dos centros de resultados. Utilizei anotações como @RestController e @RequestMapping para definir a classe como um controlador e mapear as requisições para o caminho “cr”.
 
-Com o método saveCenterResult, garanto que todas as informações necessárias sejam fornecidas antes de salvar um centro de resultado, evitando duplicatas e erros de dados. O método getAll recupera uma lista de todos os centros de resultados, facilitando a visualização e o gerenciamento dos mesmos. A anotação @CrossOrigin permite que a API seja acessada de diferentes origens, o que é essencial para a integração com outras partes do sistema ou aplicações de terceiros.
-</details>
 
 <details>
-  <summary>Configuração do método GET no "/cr"</summary>
+  <summary>Configuração do filtro de horas</summary>
   <img src="/assets/filtroControllerHora.png" alt="Descrição da imagem">
   <br>
 O método filtredHours que desenvolvi permite filtrar registros de horas em nossa API. Ele aceita parâmetros para identificar o tipo de filtro e a variável de busca. Dependendo do filtro, seja por gestor, matrícula, código de CR ou cliente, o método busca e retorna os registros relevantes. Se não encontrar registros ou ocorrer um erro, ele lança uma exceção com uma mensagem explicativa. Esse recurso facilita a busca de informações específicas pelos usuários.
