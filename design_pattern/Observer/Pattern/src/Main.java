@@ -1,24 +1,24 @@
-import classes.Jornal;
-import classes.Leitor;
-
+import classes.EmailNotificacao;
+import classes.LojaOnline;
+import classes.SMSNotificacao;
+import interfaces.Observador;
 
 public class Main {
+
     public static void main(String[] args) {
-        Jornal jornal = new Jornal();
+        LojaOnline lojaOnline = new LojaOnline();
 
-        Leitor leitor1 = new Leitor("João");
-        Leitor leitor2 = new Leitor("Maria");
+        Observador emailUsuario1 = new EmailNotificacao("usuario1@example.com");
+        Observador smsUsuario1 = new SMSNotificacao("123456789");
 
+        lojaOnline.adicionarObservador(emailUsuario1);
+        lojaOnline.adicionarObservador(smsUsuario1);
 
-        jornal.registerObserver(leitor1);
-        jornal.registerObserver(leitor2);
+        lojaOnline.notificarNovoProduto("Smartphone modelo XYZ");
 
-
-        jornal.publishNews("Novo prefeito eleito na cidade!");
-
-
-        jornal.removeObserver(leitor2);
-
-        jornal.publishNews("Aumento de impostos previsto para o próximo ano.");
+        Observador emailUsuario2 = new EmailNotificacao("usuario2@example.com");
+        lojaOnline.adicionarObservador(emailUsuario2);
+        lojaOnline.notificarNovoProduto("Fone de ouvido Bluetooth ABC");
     }
+
 }
