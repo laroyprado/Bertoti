@@ -1,0 +1,8 @@
+package AntiPattern;
+
+class PagamentoPayPal extends MetodoDePagamento {
+    @Override
+    void pagar(double valor) {
+        System.out.println("Pagamento de R$" + valor + " realizado com PayPal.");
+    }
+}
