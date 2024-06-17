@@ -1,8 +1,8 @@
-package classes;
+package Patter;
 
-public class PagamentoCartaoCredito extends MetodoDePagamento {
+class PagamentoCartaoCredito implements MetodoDePagamento {
     @Override
-    void pagar(double valor) {
+    public void pagar(double valor) {
         System.out.println("Pagamento de R$" + valor + " realizado com cartão de crédito.");
     }
 }
