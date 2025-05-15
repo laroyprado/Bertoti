@@ -357,6 +357,92 @@ Essa abordagem melhora significativamente a usabilidade e integridade dos dados 
 
 
 
+### Em 2024-2 
+![banner-api-3](./assets/pro4tech-overview.png)
+
+## RecruitDash 
+
+### Empresa Parceira: [Pro4Tech](https://pro4tech.com.br/)
+
+### Problema:
+Atualmente, a empresa enfrenta dificuldades para acompanhar e analisar de forma eficiente os dados relacionados ao processo de recrutamento e seleção. A ausência de uma plataforma centralizada e interativa dificulta o acesso a informações importantes como número de candidatos, tempo médio de contratação e custos envolvidos. Isso compromete a capacidade dos gestores de tomar decisões estratégicas rápidas e informadas. Além disso, a falta de relatórios dinâmicos e personalizáveis limita a análise detalhada por diferentes critérios, prejudicando a identificação de padrões e tendências que poderiam otimizar a eficiência do processo e a alocação dos recursos.
+
+Como resultado, o processo de recrutamento se torna menos eficiente, com desperdício de tempo e recursos, além de dificultar a melhoria contínua baseada em dados confiáveis e atualizados em tempo real.
+
+
+### Solução Entregue pela Equipe:
+O objetivo da aplicação é um dashboard interativo para centralizar e visualizar dados do processo de recrutamento e seleção de uma empresa. A plataforma permitirá uma análise em tempo real de métricas como número de candidatos, tempo médio de contratação e custos, gerando relatórios dinâmicos que apoiam decisões estratégicas. Além disso, os usuários poderão personalizar relatórios conforme suas necessidades, filtrando informações por critérios relevantes. A ferramenta visa otimizar o processo de recrutamento, identificando padrões e tendências para melhorar a eficiência e alocação de recursos.
+
+[Repositório do Projeto ](https://github.com/codecatss/API-BD4)
+
+#### Tecnologias Utilizadas
+>
+
+> - **Java**: Essencial para o desenvolvimento do backend do sistema de gestão de horas extras e sobreavisos.
+> - **Spring Boot**: Facilita a configuração e o desenvolvimento de aplicativos Java, permitindo uma rápida implementação de serviços web e RESTful.
+> - **React**: Utilizado para desenvolver a lógica do lado do cliente, interatividade e dinamismo na interface do usuário.
+
+> - **Git e Github**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
+
+> - **Postgresql**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
+
+
+
+#### Contribuições Pessoais
+
+<details>
+  <summary>Versionamento De Banco</summary>
+  <img src="./assets/migratioj-api-5.png" alt="Descrição da imagem">
+  <br>
+Implementei no AuthenticationController um mecanismo de controle de tentativas de login com o objetivo de reforçar a segurança contra acessos indevidos. A lógica utiliza um ConcurrentHashMap para registrar dinamicamente o número de tentativas falhas por e-mail, sendo incrementado a cada falha por meio de um AtomicInteger. Ao atingir o limite de três tentativas consecutivas (definido por MAX_ATTEMPTS), o sistema remove o contador associado ao e-mail e aciona o EmailService para enviar automaticamente uma notificação ao usuário, alertando-o sobre possíveis acessos não autorizados. Essa estratégia atua como uma medida preventiva, promovendo maior proteção das contas de usuário e facilitando a detecção de atividades suspeitas.
+</details>
+
+<details>
+  <summary>Envio de emails</summary>
+  <img src="./assets/email-api-5.png" alt="Descrição da imagem">
+  <br>
+Desenvolvi o CompanyController para gerenciar as operações relacionadas às empresas em nossa aplicação. Esse controlador REST segue o padrão arquitetural RESTful, que permite que o frontend e outras aplicações se comuniquem com o backend de forma simples e padronizada através de requisições HTTP.
+
+Utilizando anotações como @RestController e @RequestMapping com o caminho "/company", defini claramente o ponto de entrada das requisições relacionadas a empresas. Essa organização facilita a manutenção e escalabilidade do sistema, agrupando as funcionalidades por domínio.
+
+O método getAllCompanies foi projetado para recuperar de forma paginada todas as empresas registradas no sistema. Isso garante eficiência na busca e na exibição dos dados, especialmente em cenários com um grande volume de registros. A resposta retorna um Page de CompanyDTO, promovendo uma camada de segurança e desacoplamento entre a entidade de banco e os dados expostos ao cliente.
+
+A integração com o Swagger por meio das anotações @Operation e @ApiResponses fornece uma documentação clara e automática da API. Isso é essencial para o entendimento e consumo da API por outros desenvolvedores, além de ajudar na validação e testes.
+
+A separação da lógica de negócios foi mantida com o uso de um serviço (CompanyService) e de um repositório (CompanyRepository), respeitando os princípios da arquitetura em camadas. Essa abordagem melhora a organização do código, facilita os testes e aumenta a coesão das responsabilidades de cada classe.
+</details>
+
+<details>
+  <summary>ETL - "Extract, Transform, Load"</summary>
+  <img src="./assets/etl-api-5.png" alt="Descrição da imagem">
+  <br>
+Este módulo implementa a lógica principal do processo de ETL para arquivos Excel com múltiplas planilhas. Um dos pontos centrais está na função process_etl, que executa a transformação e carga dos dados de cada aba com base nas regras definidas em um mapeamento JSON.
+
+A lógica percorre linha a linha dos dados, limpando e padronizando colunas (como capitalização e números de telefone), tratando valores nulos e validando coerência entre colunas de datas (por exemplo, impedindo que uma data de início seja maior que a de fim). Caso haja inconsistências ou erros de integridade na inserção no banco via SQLAlchemy, esses registros são armazenados em logs específicos por tabela e não interrompem o fluxo.
+
+Além disso, o script gera um arquivo de log em JSON contendo os erros e mensagens de sucesso e move os arquivos processados para a pasta de concluídos ou, em caso de erro, para a pasta de erros. O controle automático é ativado por meio da classe ExcelFileEventHandler, que detecta novos arquivos .xlsx no diretório monitorado e dispara o ETL automaticamente.
+</details>
+
+
+
+#### Hard Skills
+
+- **Java** : Sei fazer com autonomia
+- **Springboot** : Sei fazer com autonomia
+- **Postgresql** : Sei fazer com ajuda
+
+#### Soft Skills
+
+**Autonomia e Proatividade**: Desde a leitura do Excel até a carga no banco Postgresql, todo o processo foi estruturado de forma automática. Configurei um observador de arquivos com o Watchdog para monitorar a chegada de novos arquivos e iniciar o pipeline sem intervenção manual. Além disso, estruturei logs de erro por tabela, com mensagens explicativas, e movimentei os arquivos entre pastas (concluídos, com erro, etc.), demonstrando iniciativa para tornar o processo fluido, robusto e escalável.
+
+**Pensamento Analítico** : Durante o desenvolvimento do pipeline de ETL, enfrentei o desafio de lidar com diversas abas de um arquivo Excel contendo dados heterogêneos. Implementei uma lógica de validação de datas entre colunas relacionadas (como início e fim de processos), além de aplicar tratamentos específicos para campos como telefone, garantindo consistência antes da carga no banco de dados. Essa capacidade analítica foi fundamental para antecipar possíveis falhas de integridade nos dados e garantir a confiabilidade do
+
+**Organização**: Implementei um mapeamento externo via JSON para tornar o sistema flexível e facilitar a manutenção de colunas e tabelas. Além disso, cada tentativa de inserção é monitorada com tratamento de exceções SQL, permitindo identificar erros de chave primária, dados inconsistentes e outros problemas com clareza. Esse cuidado reflete meu comprometimento com a qualidade da solução e a facilidade de diagnóstico e correção de erros no ambiente produtivo.
+
+
+
+
+
 
 
 
