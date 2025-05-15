@@ -66,6 +66,15 @@ A equipe desenvolveu uma aplicação que permitia aos integrantes do time realiz
 > - **Notion**: Ferramenta usada para gerenciar as tarefas do projeto e organizar o fluxo de trabalho da equipe.
 
 
+#### Contribuições Pessoais
+
+<details>
+  <summary>Atuei como Scrum Master</summary>
+    Esse código cria uma interface gráfica simples para uma tela de login usando a biblioteca PySimpleGUI.
+    Define o tema visual da interface (LightGreen1) para determinar as cores e o estilo.
+    É montada uma estrutura que organiza os elementos visuais, como caixas de texto, campos de entrada, um botão, e uma opção para salvar o login.
+
+</details>
 
 <details>
   <summary>Configuração da interface da tela de login</summary>
@@ -81,6 +90,23 @@ A equipe desenvolveu uma aplicação que permitia aos integrantes do time realiz
     <img src="./assets/logica-login-api1.png" alt="Descrição da imagem">
     Esse código adiciona a lógica funcional à interface de login criada no tópico anterior. Ele fica em um loop contínuo, aguardando interações do usuário com a janela.
 </details>
+
+
+
+#### Hard Skills
+
+- **Python** : Sei fazer com autonomia
+- **Notion** : Sei fazer com autonomia
+
+
+#### Soft Skills
+
+**Comunicação**: Exercitei minhas habilidades de comunicação ao interagir frequentemente com a equipe, transmitindo a visão do cliente e alinhando expectativas. Mantive um diálogo aberto e constante com o cliente para entender suas necessidades e garantir que as funcionalidades desenvolvidas atendessem às suas expectativas.
+
+**Autodidatismo** : Demonstrei proatividade ao buscar e adquirir conhecimentos sobre tecnologias novas, como Spring Boot, que não tinha familiaridade anteriormente. 
+
+**Trabalho sob pressão**: Em momentos de baixa de recursos no time, assumi mais responsabilidades do que o habitual para garantir que o projeto fosse entregue dentro do prazo estabelecido. 
+
 
 
 ### Em 2023-1
@@ -109,6 +135,10 @@ O sistema também automatiza o processo de aprovação, encaminhando as horas re
 > - **Git e Github**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
 > - **MySQL**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
 
+
+
+#### Contribuições Pessoais
+
 <details>
   <summary>Utilização do componente combobox do JavaFX</summary>
     <img src="./assets/Aprova-hora-adm-2api.png" alt="Descrição da imagem">
@@ -122,6 +152,24 @@ A ideia é que, quando o usuário escolhe uma dessas opções, o código detecta
     <img src="./assets/botao-reprovar.png" alt="Descrição da imagem">
 O método assegura que o processo de reprovação seja realizado de forma válida e organizada. Ele exige que o usuário selecione um item na tabela e forneça uma justificativa antes de registrar a reprovação. Caso a justificativa esteja ausente, um aviso é exibido, impedindo que a ação prossiga sem as informações necessárias. Quando todos os critérios são atendidos, a reprovação é registrada no banco de dados, a tabela de aprovação é atualizada para refletir as alterações, e o campo de justificativa é limpo para evitar reutilizações acidentais. Isso garante uma validação rigorosa, facilita a rastreabilidade das reprovações e mantém o sistema consistente e confiável.
 </details>
+
+
+#### Hard Skills
+
+- **Java** : Sei fazer com autonomia
+- **JavaFx** : Sei fazer com ajuda
+- **Git/Github** : Sei fazer com ajuda
+- **MySQL** : Sei fazer com ajuda
+
+
+
+
+#### Soft Skills
+
+**Autodidatismo** : Por ser uma nova tecnologia, tive que aprender ao decorrer do semestre como utiliza-la para ter o sucesso do projeto 
+
+**Colaboração**
+Em momentos que alguém do time estava com dificuldades ou problemas em sua task, acabei por ajudar ou realizar a task para que assim, tivesse-mos sucesso na sprint
 
 ### Em 2023-2 
 ![banner-api-3](./assets/banner-gerenciador-hora-extra.png)
@@ -207,6 +255,104 @@ O método filtredHours que desenvolvi permite filtrar registros de horas em noss
 **Autodidatismo** : Demonstrei proatividade ao buscar e adquirir conhecimentos sobre tecnologias novas, como Spring Boot, que não tinha familiaridade anteriormente. 
 
 **Trabalho sob pressão**: Em momentos de baixa de recursos no time, assumi mais responsabilidades do que o habitual para garantir que o projeto fosse entregue dentro do prazo estabelecido. 
+
+
+
+
+### Em 2023-2 
+![banner-api-3](./assets/banner-oracle.png)
+
+## Oracle Partner Tracker
+
+### Empresa Parceira: [Oracle](https://www.oracle.com/)
+
+### Problema:
+A Oracle enfrenta dificuldades na gestão e análise eficiente dos dados provenientes do sistema OPN (Oracle PartnerNetwork) das empresas parceiras. A ausência de uma plataforma moderna compromete a visualização inteligente dessas informações, dificultando a identificação de melhorias e a tomada de decisões estratégicas.
+
+
+### Solução Entregue pela Equipe:
+A Oracle Partner Tracker é uma plataforma moderna e inteligente de gerenciamento e análise de dados, capaz de interpretar, organizar e representar os dados do sistema OPN da empresa parceira Oracle. Entre os objetivos principais do projeto, se encontram a modernização do acompanhamento das empresas parceiras Oracle, assim como a visualização de dados de forma inteligente, para facilitar a identificação de melhorias e de conclusões estratégicas.
+
+[Repositório do Projeto ](https://github.com/codecatss/API-BD4)
+
+#### Tecnologias Utilizadas
+>
+
+> - **Java**: Essencial para o desenvolvimento do backend do sistema de gestão de horas extras e sobreavisos.
+> - **Spring Boot**: Facilita a configuração e o desenvolvimento de aplicativos Java, permitindo uma rápida implementação de serviços web e RESTful.
+> - **Vue**: Utilizado para desenvolver a lógica do lado do cliente, interatividade e dinamismo na interface do usuário.
+
+> - **Git e Github**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
+
+> - **MySQL**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
+
+
+
+#### Contribuições Pessoais
+
+<details>
+  <summary>Mapa do Brasil Integrado a Imagem</summary>
+  <img src="./assets/setupSVG.png" alt="Descrição da imagem">
+  <br>
+Desenvolvi o componente BrazilMap.vue para exibir de forma visual e interativa os dados regionais no contexto do mapa do Brasil. Esse componente Vue opera sobre um SVG do mapa brasileiro, permitindo representar graficamente informações quantitativas para cada estado de maneira clara e acessível.
+
+Ao utilizar o ciclo de vida mounted, o componente executa duas funções principais: setupSVG e setupMap. A função setupSVG é responsável por associar os dados estáticos (como nome do estado e valor numérico) aos elementos SVG que representam cada estado no mapa. Já a função setupMap cuida da lógica de coloração, definindo tonalidades de vermelho com base nos valores atribuídos a cada estado — quanto maior o valor, mais escura a tonalidade.
+
+Implementei também interações com o mouse para melhorar a experiência do usuário. Ao passar o cursor sobre um estado, o componente exibe uma info-box dinâmica com detalhes do nome e valor, além de destacar visualmente o estado selecionado. Isso permite uma exploração intuitiva e responsiva do mapa.
+
+O componente é ideal para aplicações que demandam visualização geográfica de indicadores — como dados climáticos, econômicos ou populacionais —, tornando a análise regional mais acessível e visualmente atrativa.
+</details>
+
+<details>
+  <summary>Configuração Do Controller Company</summary>
+  <img src="./assets/CompanyController.png" alt="Descrição da imagem">
+  <br>
+Desenvolvi o CompanyController para gerenciar as operações relacionadas às empresas em nossa aplicação. Esse controlador REST segue o padrão arquitetural RESTful, que permite que o frontend e outras aplicações se comuniquem com o backend de forma simples e padronizada através de requisições HTTP.
+
+Utilizando anotações como @RestController e @RequestMapping com o caminho "/company", defini claramente o ponto de entrada das requisições relacionadas a empresas. Essa organização facilita a manutenção e escalabilidade do sistema, agrupando as funcionalidades por domínio.
+
+O método getAllCompanies foi projetado para recuperar de forma paginada todas as empresas registradas no sistema. Isso garante eficiência na busca e na exibição dos dados, especialmente em cenários com um grande volume de registros. A resposta retorna um Page de CompanyDTO, promovendo uma camada de segurança e desacoplamento entre a entidade de banco e os dados expostos ao cliente.
+
+A integração com o Swagger por meio das anotações @Operation e @ApiResponses fornece uma documentação clara e automática da API. Isso é essencial para o entendimento e consumo da API por outros desenvolvedores, além de ajudar na validação e testes.
+
+A separação da lógica de negócios foi mantida com o uso de um serviço (CompanyService) e de um repositório (CompanyRepository), respeitando os princípios da arquitetura em camadas. Essa abordagem melhora a organização do código, facilita os testes e aumenta a coesão das responsabilidades de cada classe.
+</details>
+
+<details>
+  <summary>Função Conectada a API Externa para busca de CNPJ</summary>
+  <img src="./assets/buscarCNPJ.png" alt="Descrição da imagem">
+  <br>
+Implementei esta função reativa com watchEffect para automatizar a busca e preenchimento dos dados cadastrais de uma empresa com base no CNPJ informado. Esse comportamento foi desenvolvido dentro de um componente Vue.js, utilizando o paradigma reativo para acompanhar mudanças no valor do CNPJ.
+
+Sempre que o campo de CNPJ (accountDataLocal.cnpj) atinge 14 dígitos numéricos válidos, a função é acionada automaticamente. A partir disso, uma requisição HTTP é enviada para a API pública da Speedio, que retorna informações oficiais da Receita Federal sobre o CNPJ informado.
+
+Com os dados recebidos, realizo verificações para garantir que as informações de estado (UF) e cidade (MUNICÍPIO) estejam disponíveis. Quando válidas, essas informações são utilizadas para preencher automaticamente os campos de nome da empresa (RAZAO SOCIAL), estado, cidade e logradouro, proporcionando uma experiência mais fluida e menos propensa a erros de digitação por parte do usuário.
+
+Além disso, o sistema busca dinamicamente a lista de cidades referentes ao estado retornado pela API, atualizando o campo accountDataLocal.cities, o que mantém a interface sempre sincronizada com os dados reais.
+
+Caso os dados retornados estejam incompletos, o sistema limpa os campos relacionados, prevenindo inconsistências. Também há tratamento de erros via .catch, garantindo que falhas na requisição não quebrem a aplicação e sejam devidamente registradas para depuração.
+
+Essa abordagem melhora significativamente a usabilidade e integridade dos dados inseridos no sistema, ao mesmo tempo em que reduz o esforço manual do usuário.
+</details>
+
+
+
+#### Hard Skills
+
+- **Java** : Sei fazer com autonomia
+- **Springboot** : Sei fazer com autonomia
+- **Vue**: Sei fazer com ajuda
+- **MySQL** : Sei fazer com ajuda
+
+#### Soft Skills
+
+**Relacionamento com Stakeholders**: Atuei como ponte entre os stakeholders e a equipe de desenvolvimento, garantindo que a visão do produto fosse compreendida e aplicada com clareza. Promovi alinhamentos frequentes com o cliente para entender suas necessidades e convertê-las em requisitos priorizados, assegurando que as entregas estivessem em sintonia com os objetivos estratégicos do negócio. Essa atuação contribuiu para decisões mais ágeis e produtos com maior aderência ao valor esperado.
+
+**Resolução de Problemas** : Durante o projeto, exercitei minha capacidade de resolução de problemas ao lidar com desafios inesperados, como mudanças de requisitos ou limitações técnicas. Mantive uma postura proativa para entender a raiz dos problemas e colaborar com o time na busca por soluções viáveis. Isso contribuiu para manter o progresso das entregas e preservar o alinhamento com os objetivos do cliente, mesmo diante de imprevistos.
+
+**Pensamento Estratégico**: Apliquei pensamento estratégico ao priorizar funcionalidades com base no valor de negócio, no impacto ao usuário e nos objetivos da empresa. Busquei entender o contexto maior do produto, antecipar riscos e tomar decisões de backlog que garantissem entregas mais relevantes. Essa visão ampla foi essencial para alinhar o desenvolvimento com a estratégia do cliente e gerar mais valor a cada sprint. 
+
+
 
 
 
