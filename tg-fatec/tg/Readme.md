@@ -378,7 +378,7 @@ O objetivo da aplicação é um dashboard interativo para centralizar e visualiz
 #### Tecnologias Utilizadas
 >
 
-> - **Java**: Essencial para o desenvolvimento do backend do sistema de gestão de horas extras e sobreavisos.
+> - **Java**: Essencial para o desenvolvimento do backend do sistema de gestão de pessoas cadastradas para vagas
 > - **Spring Boot**: Facilita a configuração e o desenvolvimento de aplicativos Java, permitindo uma rápida implementação de serviços web e RESTful.
 > - **React**: Utilizado para desenvolver a lógica do lado do cliente, interatividade e dinamismo na interface do usuário.
 
@@ -386,6 +386,8 @@ O objetivo da aplicação é um dashboard interativo para centralizar e visualiz
 
 > - **Postgresql**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
 
+> - **Docker**: 
+Utilizado para criar ambientes isolados e padronizados para a aplicação. Com Docker, é possível configurar containers para o backend, frontend e banco de dados, garantindo que todos os membros da equipe trabalhem com a mesma infraestrutura, facilitando o deploy, testes e escalabilidade do sistema.
 
 
 #### Contribuições Pessoais
@@ -439,6 +441,69 @@ Além disso, o script gera um arquivo de log em JSON contendo os erros e mensage
 
 **Organização**: Implementei um mapeamento externo via JSON para tornar o sistema flexível e facilitar a manutenção de colunas e tabelas. Além disso, cada tentativa de inserção é monitorada com tratamento de exceções SQL, permitindo identificar erros de chave primária, dados inconsistentes e outros problemas com clareza. Esse cuidado reflete meu comprometimento com a qualidade da solução e a facilidade de diagnóstico e correção de erros no ambiente produtivo.
 
+
+
+
+### Em 2025-1 
+![banner-api-3](./assets/kersys_ltda_cover.jpeg)
+
+## FloraTrack  
+
+### Empresa Parceira: [Kersys](https://kersys.com.br/)
+
+### Problema:
+Atualmente, não existe uma solução tecnológica centralizada e inteligente para o monitoramento e gestão eficiente de áreas reflorestadas. A ausência de ferramentas que integrem dados sobre saúde das árvores, captura de CO₂, qualidade do solo, biodiversidade e fontes de financiamento dificulta a tomada de decisões estratégicas. O uso de Inteligência Artificial é necessário para analisar esses dados em tempo real, prever tendências ambientais e otimizar os esforços de reflorestamento com base em insights automatizados. Uma API integrada com recursos de IA pode transformar a forma como esses projetos são acompanhados e aprimorados.
+
+### Solução Entregue pela Equipe:
+O projeto tem como objetivo principal desenvolver uma API inteligente voltada para a gestão de áreas reflorestadas, integrando dados ambientais e financeiros de forma centralizada. Com o uso de Inteligência Artificial, a solução permitirá monitorar a captura de CO₂, a qualidade do solo e a sobrevivência das árvores, fornecendo análises preditivas e recomendações automatizadas. A API também facilitará o controle e a transparência das fontes de financiamento, bem como a avaliação da biodiversidade ao longo do tempo. Além disso, possibilitará a comparação entre áreas reflorestadas de diferentes regiões e biomas, contribuindo para uma tomada de decisão mais eficiente e sustentável.
+
+[Repositório do Projeto ](https://github.com/Localhost-308/API-BD6)
+
+#### Tecnologias Utilizadas
+>
+
+> - **Python**: Essencial para o desenvolvimento do backend do sistema de gestão de áreas reflorestadas
+> - **Flask**: Facilita a configuração e o desenvolvimento de aplicativos Python, permitindo uma rápida implementação de serviços web e RESTful.
+> - **React**: Utilizado para desenvolver a lógica do lado do cliente, interatividade e dinamismo na interface do usuário.
+
+> - **Git e Github**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
+
+> - **Postgresql**: Ferramentas essenciais para controle de versão e colaboração entre os membros da equipe, permitindo o gerenciamento eficiente do código-fonte.
+
+
+
+#### Contribuições Pessoais
+
+<details>
+  <summary>Foco Total no Produto</summary>
+  <img src="./assets/backlog.png" alt="Descrição da imagem">
+  <br>
+Como Product Owner (PO) no desenvolvimento da API para gestão de áreas reflorestadas, atuei diretamente na definição e priorização dos requisitos do produto, garantindo o alinhamento entre os objetivos ambientais e as entregas técnicas. Conduzi reuniões semanais com a equipe para revisar o backlog, validar funcionalidades e adaptar as demandas conforme o feedback contínuo dos stakeholders. Trabalhei ativamente na elaboração de histórias de usuário com critérios de aceitação claros, facilitando a implementação eficiente de recursos como monitoramento de CO₂, análise de biodiversidade e visualização de dados. Essa atuação estratégica permitiu manter o foco no valor entregue, assegurando que a solução final fosse funcional, escalável e aderente às necessidades reais do projeto.
+</details>
+
+<details>
+  <summary>Sistema e Exclusão LGPD</summary>
+  <img src="./assets/lgpd.png" alt="Descrição da imagem">
+  <br>
+Implementei um sistema de exclusão de dados sensíveis conforme os princípios da LGPD, utilizando criptografia assimétrica para garantir o sigilo das informações pessoais dos usuários. Com o módulo EncryptionService, desenvolvi uma rotina de geração de chaves RSA únicas para cada usuário no momento do cadastro, armazenando apenas a chave pública para uso em criptografia. Dados confidenciais foram criptografados com essa chave pública, impossibilitando o acesso direto a eles. Para atender à exclusão definitiva exigida pela LGPD, bastava eliminar a chave privada associada ao usuário, tornando a reversão da criptografia tecnicamente inviável. Essa abordagem assegura a irreversibilidade do processo de anonimização e reforça o compromisso do sistema com a privacidade e segurança da informação.
+</details>
+
+
+
+
+#### Hard Skills
+
+- **Python** : Sei fazer com autonomia
+- **Flask** : Sei fazer com ajuda
+- **Postgresql** : Sei fazer com ajuda
+
+#### Soft Skills
+
+**Liderança Colaborativa:**: Atuei como Product Owner liderando as definições e o direcionamento do projeto, facilitando a comunicação entre equipe técnica e os requisitos do cliente. Promovi reuniões constantes para alinhamento, definição de prioridades e acompanhamento do progresso, garantindo que todos estivessem engajados e focados em metas comuns. Essa atuação contribuiu diretamente para a entrega de um produto coerente e funcional.
+
+**Visão Estratégica de Produto** : Estruturei o sistema com foco em sustentabilidade e conformidade legal, propondo soluções como a criptografia assimétrica para garantir anonimização de dados conforme a LGPD. Essa abordagem conectou as decisões técnicas aos objetivos maiores do projeto, como transparência ambiental e segurança de dados, antecipando riscos futuros e alinhando o produto às demandas do mercado.
+
+**Comunicação Eficaz**: Traduzi conceitos técnicos complexos, como encriptação e modelagem de dados ambientais, em histórias compreensíveis para todos os envolvidos no projeto. Isso possibilitou o entendimento claro das funcionalidades por parte dos desenvolvedores e facilitou a validação das entregas com stakeholders, garantindo assertividade e confiança no processo.
 
 
 
